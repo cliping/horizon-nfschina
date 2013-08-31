@@ -1,3 +1,9 @@
+horizon (1:2013.1.2-0ubuntu1~cloud0) precise; urgency=low
+
+  * Customized by nfscloud.
+
+ -- Yuan-Chao Sun <yuanchao@nfschina.com>  Sat, 31 Aug 2013 19:20:28 +0800
+
 horizon (1:2013.1.2-0ubuntu1~cloud0) precise-grizzly; urgency=low
 
   * New update for the Ubuntu Cloud Archive.
