@@ -121,11 +121,11 @@ body {
   background-color: #ffffff;
 }
 a {
-  color: #dd4814;
+  color: #0088cc;
   text-decoration: none;
 }
 a:hover {
-  color: #dd4814;
+  color: #005580;
   text-decoration: underline;
 }
 .row {
@@ -1280,7 +1280,7 @@ table .span12 {
   height: 14px;
   line-height: 14px;
   vertical-align: text-top;
-  xbackground-image: url('/static/bootstrap/img/glyphicons-halflings.png?531d4b607365');
+  background-image: url('/static/bootstrap/img/glyphicons-halflings.png');
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -1290,7 +1290,7 @@ table .span12 {
   *margin-left: 0;
 }
 .icon-white {
-  xbackground-image: url('/static/bootstrap/img/glyphicons-halflings-white.png?11118ae8db79');
+  background-image: url('/static/bootstrap/img/glyphicons-halflings-white.png');
 }
 .icon-glass {
   background-position: 0      0;
@@ -1735,7 +1735,7 @@ table .span12 {
   font-weight: normal;
   line-height: 18px;
   color: #555555;
-  white-space: nowrap;
+  word-wrap: break-word;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu .active > a,
@@ -1841,7 +1841,6 @@ table .span12 {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: 1px solid #ccc;
   border-bottom-color: #bbb;
   -webkit-border-radius: 4px;
@@ -1942,7 +1941,7 @@ table .span12 {
 .btn-inverse,
 .btn-inverse:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  color: #fff;
+  color: #ffffff;
 }
 .btn-primary.active,
 .btn-warning.active,
@@ -1950,45 +1949,33 @@ table .span12 {
 .btn-success.active,
 .btn-info.active,
 .btn-dark.active {
-  color: #fff,
-  background-color: #c44012;
-
+  color: rgba(255, 255, 255, 0.75);
 }
-
 .btn-primary {
-    color: #fff;
-    border: 1px solid #ab370f;
-    background-color: #DD4814;
-    background-image: linear-gradient(bottom, rgb(199,66,18) 0%, rgb(221,74,20) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(221,74,20) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(221,74,20) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(221,74,20) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(221,74,20) 100%);
-    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(top, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: #DD4814;
+  background-color: #0044cc;
 }
-/*.btn-primary.active {
-  background-color: #c44012 \9;
-}*/
-$.btn-primary:active,
-.btn-primary:active {
-    background-color: #DD4814;
-    background-image: linear-gradient(bottom, rgb(199,66,18) 0%, rgb(236,94,43) 100%);
-    background-image: -o-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(236,94,43) 100%);
-    background-image: -moz-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(236,94,43) 100%);
-    background-image: -webkit-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(236,94,43) 100%);
-    background-image: -ms-linear-gradient(bottom, rgb(199,66,18) 0%, rgb(236,94,43) 100%);
-    text-decoration: none;
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
 }
-
-
 .btn-warning {
   background-color: #faa732;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
@@ -3460,6 +3447,8 @@ a.thumbnail:hover {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: width 0.6s ease;
   -moz-transition: width 0.6s ease;
@@ -3715,13 +3704,13 @@ a.thumbnail:hover {
 /* IE7 */
 @font-face {
   font-family: 'anivers';
-  src: url('/static/dashboard/fonts/Anivers_Regular-webfont.eot?5f61443eb372');
-  src: url('/static/dashboard/fonts/Anivers_Regular-webfont.eot?iefix') format('eot'), url('/static/dashboard/fonts/Anivers_Regular-webfont.woff?2c3db88030ec') format('woff'), url('/static/dashboard/fonts/Anivers_Regular-webfont.ttf?6a7822aa21cf') format('truetype'), url('/static/dashboard/fonts/Anivers_Regular-webfont.svg#webfont3JLVF59W') format('svg');
+  src: url('/static/dashboard/fonts/Anivers_Regular-webfont.eot');
+  src: url('/static/dashboard/fonts/Anivers_Regular-webfont.eot?iefix') format('eot'), url('/static/dashboard/fonts/Anivers_Regular-webfont.woff') format('woff'), url('/static/dashboard/fonts/Anivers_Regular-webfont.ttf') format('truetype'), url('/static/dashboard/fonts/Anivers_Regular-webfont.svg#webfont3JLVF59W') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 a {
-  color: #dd4814;
+  color: #43a1d6;
 }
 ul {
   list-style: none;
@@ -3753,7 +3742,7 @@ dt {
   font-size: 11px;
   margin-left: 20px;
   padding: 0;
-  background-image: url('../../dashboard/img/drop_arrow.png?2ec1100baed3');
+  background-image: url('/static/dashboard/img/drop_arrow.png');
   border: 1px solid #c0d9e4;
   background-color: #e9f5fa;
   background-repeat: no-repeat;
@@ -3789,12 +3778,12 @@ body {
   background-color: #fff;
   min-width: 890px;
 }
-
-
-
 /* Login Splash Page */
+#splash {
+  background: #fafafa;
+}
 #splash .login {
-  background: #DD4814 url(../img/ubuntu.png) no-repeat center 35px;
+  background: #dd4814 url('/static/ubuntu/img/ubuntu.png') no-repeat center 35px;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -3813,16 +3802,17 @@ body {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
 }
-
 #splash .login form,
 #splash .login .modal-header {
     background-color: #fff;
 }
-
-#splash .login input {
+#splash .login form .error {
+  width: 100%;
+}
+#splash .login form input {
   width: 350px;
 }
-#splash .login select {
+#splash .login form select {
   width: 360px;
 }
 #splash .help-block {
@@ -3861,7 +3851,7 @@ h1.brand {
   padding-bottom: 40px;
 }
 h1.brand a {
-  background: url(../img/ubuntu.png) top left no-repeat;
+  background: url('/static/ubuntu/img/ubuntu.png') top left no-repeat;
   display: block;
   float: left;
   width: 116px;
@@ -3893,7 +3883,7 @@ a.current_item:hover h4 {
 .sidebar .switcher_bar a.dropdown-toggle {
   display: block;
   padding: 5px 0;
-  background-image: url('../../dashboard/img/drop_arrow.png');
+  background-image: url('/static/dashboard/img/drop_arrow.png');
   border: 1px solid #c0d9e4;
   background-color: #e9f5fa;
   background-repeat: no-repeat;
@@ -3911,6 +3901,16 @@ a.current_item:hover h4 {
   font-size: 16px;
   margin: -6px 0 0 14px;
   padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar .switcher_bar h3:hover {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: none;
+  padding-right: 1em;
+  word-wrap: break-word;
 }
 .sidebar .switcher_bar h4 {
   color: #6fabc4;
@@ -4034,6 +4034,7 @@ a.current_item:hover h4 {
 }
 .table th.header:hover {
   background-color: #e8e8e8;
+  text-decoration: underline;
 }
 .table tbody td.anchor a {
   display: block;
@@ -4054,10 +4055,10 @@ a.current_item:hover h4 {
   background-position: 98% center;
 }
 .table th.headerSortDown {
-  background-image: url('../../dashboard/img/drop_arrow.png?2ec1100baed3');
+  background-image: url('/static/dashboard/img/drop_arrow.png');
 }
 .table th.headerSortUp {
-  background-image: url('../../dashboard/img/up_arrow.png?4293b62aa222');
+  background-image: url('/static/dashboard/img/up_arrow.png');
 }
 .table tr.summation td:first-child,
 .table tr.summation td:last-child {
@@ -4065,7 +4066,7 @@ a.current_item:hover h4 {
   border-bottom: 0 none;
 }
 th {
-  background: #F7F2F6;
+  background: #f1f1f1;
 }
 td.anchor {
   padding: 0;
@@ -4076,7 +4077,6 @@ small {
 .main_nav {
   list-style: none;
   width: 222px;
-  float: left;
   margin: 10px 0 20px 0;
 }
 .main_nav a {
@@ -4164,11 +4164,12 @@ table form {
   float: right;
   min-width: 400px;
 }
-.table_actions .table_search {
+.table_actions .table_search,
+.table_actions .table_filter {
   display: inline-block;
 }
 .table_search input {
-  background: url('../../dashboard/img/search.png?781fb162b111') no-repeat 195px 5px;
+  background: url('/static/dashboard/img/search.png') no-repeat 195px 5px;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -4180,13 +4181,101 @@ table form {
 .table_actions button.filter {
   margin-left: 0;
 }
+.table_actions a.btn-create,
+.table_actions a.btn-launch {
+  padding-left: 23px;
+  position: relative;
+}
+.table_actions a.btn-create:before,
+.table_actions a.btn-launch:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 20px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  background-image: url('/static/bootstrap/img/glyphicons-halflings.png');
+  background-position: -403px -92px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.table_actions a.btn-download {
+  padding-left: 23px;
+  position: relative;
+}
+.table_actions a.btn-download:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 20px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  background-image: url('/static/bootstrap/img/glyphicons-halflings.png');
+  background-position: -91px -19px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.table_actions a.btn-upload {
+  padding-left: 23px;
+  position: relative;
+}
+.table_actions a.btn-upload:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 20px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  background-image: url('/static/bootstrap/img/glyphicons-halflings.png');
+  background-position: -283px -92px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.table_actions button.btn-delete,
+.table_actions button.btn-terminate {
+  padding-left: 23px;
+  position: relative;
+}
+.table_actions button.btn-delete:before,
+.table_actions button.btn-terminate:before {
+  display: inline-block;
+  content: "";
+  width: 18px;
+  height: 20px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  background-image: url('/static/bootstrap/img/glyphicons-halflings-white.png');
+  background-position: -451px 5px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
 .table_header .table_actions {
   min-width: 0;
 }
 .table_header .table_actions a,
-.table_header .table_actions button {
+.table_header .table_actions > button,
+.table_header .table_actions .table_search button {
   display: inline-block;
   float: none;
+}
+.table_header .table_filter {
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+.table_header .table_filter i {
+  vertical-align: middle;
 }
 .table_actions form {
   float: right;
@@ -4194,6 +4283,22 @@ table form {
 }
 .hidden {
   display: none;
+}
+/*
+ * Bootstrap styles table backgrounds using nth-child(2n+1), which is
+ * oblivious to hidden elements. The styles below allow us to override
+ * the bootstrap style when neccessary by setting the odd/even classes.
+ */
+.table-striped.datatable tbody tr.odd td {
+  background-color: #f9f9f9;
+}
+.table-striped.datatable tbody tr.even td {
+  background-color: inherit;
+}
+.table-striped.datatable tbody tr.odd:hover td,
+.table-striped.datatable tbody tr.even:hover td,
+.table-striped.datatable tbody tr:hover th {
+  background-color: #f5f5f5;
 }
 .table-striped tbody tr.status_unknown:nth-child(odd) td {
   background-color: #ffffb5;
@@ -4413,11 +4518,13 @@ td.select {
 }
 /* Actions dropdown */
 td.actions_column {
-  width: 150px;
+  white-space: nowrap;
   padding: 10px;
   position: relative;
-  min-width: 140px;
-  min-height: 20px;
+  width: 200px;
+}
+td.actions_column .btn-group {
+  display: inline-block;
 }
 td.actions_column .row_actions a,
 td.actions_column .row_actions input,
@@ -4436,6 +4543,9 @@ td.actions_column .row_actions button {
 }
 td.actions_column .row_actions .hide {
   display: none;
+}
+td.actions_column .btn-action-required {
+  font-weight: bold;
 }
 /* Makes size consistent across browsers when mixing "btn-group" and "small" */
 .btn.hide,
@@ -4578,7 +4688,7 @@ tr.terminated {
   font-weight: bold;
   color: #555;
   cursor: pointer;
-  background-image: url('../../dashboard/img/right_droparrow.png?b14134630332');
+  background-image: url('/static/dashboard/img/right_droparrow.png');
   background-repeat: no-repeat;
   background-position: 130px center;
 }
@@ -4586,7 +4696,7 @@ tr.terminated {
   width: 334px;
   margin-bottom: 10px;
   border-bottom: solid 1px #E1E1E1;
-  background-image: url('../../dashboard/img/drop_arrow.png?2ec1100baed3');
+  background-image: url('/static/dashboard/img/drop_arrow.png');
 }
 form div.clearfix.error {
   width: 308px;
@@ -4626,7 +4736,7 @@ form div.clearfix.error {
   margin-top: -10px;
 }
 #region_selector li:first-child p {
-  background: #ededed url('../../dashboard/img/drop_arrow.png?2ec1100baed3') no-repeat 106px 9px !important;
+  background: #ededed url('/static/dashboard/img/drop_arrow.png') no-repeat 106px 9px !important;
   display: block;
   border: 1px solid #e1e1e1;
   padding: 5px;
@@ -4706,11 +4816,16 @@ div .flavor_table {
   float: left;
   margin-right: 50px;
 }
-.error .help-inline {
+.error .help-inline,
+.dynamic-error {
   background: #efdfdf;
   border: 1px solid #ead5d8;
   padding: 10px;
   display: block;
+}
+.dynamic-error {
+  color: #b94a48;
+  margin-bottom: 0.5em;
 }
 label.log-length {
   line-height: 28px;
@@ -4816,7 +4931,7 @@ label.log-length {
   float: left;
 }
 .project_membership input {
-  background: url('../../dashboard/img/search.png?781fb162b111') no-repeat 105px 5px whiteSmoke;
+  background: url('/static/dashboard/img/search.png') no-repeat 105px 5px whiteSmoke;
 }
 .project_membership .fake_table_header {
   background-color: #F1F1F1;
@@ -4874,7 +4989,7 @@ label.log-length {
 .project_membership .no_results {
   border: 1px solid #DDD;
   padding: 10px;
-  color: #08C;
+  opacity: 0.5;
 }
 .project_membership .role_dropdown li {
   cursor: pointer;
@@ -4891,8 +5006,18 @@ label.log-length {
   box-shadow: none;
   z-index: 99999;
 }
+.project_membership .role_dropdown li i {
+  opacity: 0;
+}
 .project_membership .role_dropdown li:hover {
   background-color: #CDCDCD;
+}
+.project_membership .role_dropdown li.selected i {
+  opacity: 1;
+}
+.project_membership .dropdown-menu.role_dropdown {
+  right: 0;
+  left: auto;
 }
 .project_membership .nav .role_options {
   float: right;
@@ -4916,6 +5041,13 @@ label.log-length {
 }
 /* Replaces CPU hungry spin.js with animated gif */
 .loading_gif {
+  width: 35px;
+  height: 13px;
+  padding-top: 2px;
+  padding-right: 5px;
+  float: left;
+}
+.action_required_img {
   width: 35px;
   height: 13px;
   padding-top: 2px;
@@ -5055,7 +5187,6 @@ label.log-length {
   width: 275px;
   margin-right: 2px;
 }
-
 /* Styling for draged network object */
 #networkListSortContainer {
   display: none;
@@ -5081,7 +5212,7 @@ label.log-length {
   border-radius: 3px;
   cursor: move;
   padding-left: 23px;
-  background: #ffffff url(/static/dashboard/img/drag.png) no-repeat 11px 50%;
+  background: #ffffff url('/static/dashboard/img/drag.png') no-repeat 11px 50%;
 }
 .networklist li em {
   font-size: 0.5em;
@@ -5337,7 +5468,7 @@ div.network .device:before {
   border-radius: 20px;
   top: -10px;
   left: -10px;
-  background: #ffffff url(/static/dashboard/img/router.png) no-repeat center center;
+  background: #ffffff url('/static/dashboard/img/router.png') no-repeat center center;
   background-size: 16px 16px;
 }
 div.network .router:after,
@@ -5481,7 +5612,7 @@ div.network .server {
   color: #333;
 }
 div.network .server:before {
-  background: #ffffff url(/static/dashboard/img/server.png) no-repeat center center;
+  background: #ffffff url('/static/dashboard/img/server.png') no-repeat center center;
   background-size: 14px 14px;
 }
 .launchButtons {
@@ -5492,14 +5623,13 @@ div.network .server:before {
   margin-left: 10px;
 }
 
-
 /* Graham Bancroft graham.bancroft@canonical.com 03 October 2012 */
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400italic");
 
 html { height: 100%; }
 
 body { 
-  background: #fff url(../img/dots.png);
+  background: #fff;
   color: #333;
   font-family: Ubuntu, Arial, 'libra sans', sans-serif; 
   font-size: 16px;
@@ -5526,7 +5656,7 @@ body {
 
 /* topbar */
 .topbar {
-  background: #dd4814 url('../../dashboard/img/header_b.png') -20% 0 repeat-x;
+  background: #dd4814 -20% 0 repeat-x;
   border-bottom: 0;
   color: #fff;
   left: -225px;
@@ -5569,10 +5699,10 @@ h1.brand a {
   background: url('../img/ubuntu.png') top left no-repeat;
   color: #fff;
   margin-bottom: 0;
-  margin-left: 25px;
+  margin-left: 45px;
   margin-top: 11px;
-  width: 349px;
-  height: 31px;
+  width: 133px;
+  height: 32px;
 }
 
 /* user info */
